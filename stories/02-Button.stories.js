@@ -113,81 +113,15 @@ export const Medium = {
   },
 };
 
-// States
-export const Hover = {
-  args: {
-    children: "Hover",
-  },
-};
-
-export const Active = {
-  args: {
-    children: "Active",
-    active: true,
-  },
-};
-
-export const Disabled = {
-  args: {
-    children: "Disabled",
-    disabled: true,
-  },
-};
-
-// Icons
-export const IconLeft = {
-  args: {
-    children: "Icon left",
-    leftIcon: "icon",
-  },
-};
-
-export const IconRight = {
-  args: {
-    children: "Icon right",
-    rightIcon: "icon",
-  },
-};
-
-export const Default = {
-  args: {
-    children: "Default",
-  },
-};
-
-// Colors
-export const ColorPrimary = {
-  args: {
-    children: "Primary",
-    color: "primary",
-  },
-};
-
-export const ColorNegative = {
-  args: {
-    children: "Primary",
-    color: "negative",
-  },
-};
-
-export const ColorPositive = {
-  args: {
-    children: "Primary",
-    color: "positive",
-  },
-};
-
-export const ColorDark = {
-  args: {
-    children: "Primary",
-    color: "dark",
-  },
-};
-
-// XS Size
 export const ExtraSmall = {
   args: {
     size: "xs",
     children: "XS",
+  },
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/fOlte4EUiA3VAEzIpIlk9G/Vibe-UI-Kit-by-monday.com--Community-?node-id=46939-95775&m=dev",
+    },
   },
 };
