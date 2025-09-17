@@ -10,11 +10,27 @@ export default {
   argTypes: {
     size: {
       control: { type: "select" },
-      options: ["small", "medium", "large"],
+      options: ["xs", "small", "medium", "large"],
     },
     kind: {
       control: { type: "select" },
       options: ["primary", "secondary", "tertiary"],
+    },
+    color: {
+      control: { type: "select" },
+      options: ["primary", "negative", "positive", "dark"],
+    },
+    disabled: {
+      control: "boolean",
+    },
+    active: {
+      control: "boolean",
+    },
+    leftIcon: {
+      control: "text",
+    },
+    rightIcon: {
+      control: "text",
     },
   },
 };
@@ -94,5 +110,84 @@ export const Medium = {
       type: "figma",
       url: "https://www.figma.com/design/fOlte4EUiA3VAEzIpIlk9G/Vibe-UI-Kit-by-monday.com--Community-?node-id=46939-95765&m=dev",
     },
+  },
+};
+
+// States
+export const Hover = {
+  args: {
+    children: "Hover",
+  },
+};
+
+export const Active = {
+  args: {
+    children: "Active",
+    active: true,
+  },
+};
+
+export const Disabled = {
+  args: {
+    children: "Disabled",
+    disabled: true,
+  },
+};
+
+// Icons
+export const IconLeft = {
+  args: {
+    children: "Icon left",
+    leftIcon: "icon",
+  },
+};
+
+export const IconRight = {
+  args: {
+    children: "Icon right",
+    rightIcon: "icon",
+  },
+};
+
+export const Default = {
+  args: {
+    children: "Default",
+  },
+};
+
+// Colors
+export const ColorPrimary = {
+  args: {
+    children: "Primary",
+    color: "primary",
+  },
+};
+
+export const ColorNegative = {
+  args: {
+    children: "Primary",
+    color: "negative",
+  },
+};
+
+export const ColorPositive = {
+  args: {
+    children: "Primary",
+    color: "positive",
+  },
+};
+
+export const ColorDark = {
+  args: {
+    children: "Primary",
+    color: "dark",
+  },
+};
+
+// XS Size
+export const ExtraSmall = {
+  args: {
+    size: "xs",
+    children: "XS",
   },
 };
