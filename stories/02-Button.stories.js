@@ -37,6 +37,12 @@ export const Secondary = {
     children: "Button",
     kind: "secondary",
   },
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/fOlte4EUiA3VAEzIpIlk9G/Vibe-UI-Kit-by-monday.com--Community-?node-id=46939-95689&m=dev",
+    },
+  },
 };
 
 export const Large = {
@@ -44,11 +50,49 @@ export const Large = {
     size: "large",
     children: "Button",
   },
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/fOlte4EUiA3VAEzIpIlk9G/Vibe-UI-Kit-by-monday.com--Community-?node-id=46939-95760&m=dev",
+    },
+  },
 };
 
 export const Small = {
   args: {
     size: "small",
     children: "Button",
+  },
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/fOlte4EUiA3VAEzIpIlk9G/Vibe-UI-Kit-by-monday.com--Community-?node-id=46939-95775&m=dev",
+    },
+  },
+};
+
+export const Tertiary = {
+  args: {
+    children: "Button",
+    kind: "tertiary",
+  },
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/fOlte4EUiA3VAEzIpIlk9G/Vibe-UI-Kit-by-monday.com--Community-?node-id=46939-95693&m=dev",
+    },
+  },
+};
+
+export const Medium = {
+  args: {
+    size: "medium",
+    children: "Button",
+  },
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/fOlte4EUiA3VAEzIpIlk9G/Vibe-UI-Kit-by-monday.com--Community-?node-id=46939-95765&m=dev",
+    },
   },
 };
