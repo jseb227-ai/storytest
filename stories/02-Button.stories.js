@@ -24,6 +24,12 @@ export const Primary = {
     children: "Button",
     kind: "primary",
   },
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/fOlte4EUiA3VAEzIpIlk9G/Vibe-UI-Kit-by-monday.com--Community-?node-id=46939-95686&m=dev",
+    },
+  },
 };
 
 export const Secondary = {
