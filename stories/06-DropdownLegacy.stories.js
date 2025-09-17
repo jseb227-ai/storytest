@@ -1,17 +1,26 @@
 import React from "react";
-import { Dropdown } from "@vibe/core/next";
+import { Dropdown } from "@vibe/core";
 
 export default {
-  title: "Components/Dropdown",
+  title: "Components/Dropdown (Legacy)",
   component: Dropdown,
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs", "alpha"],
+  tags: ["autodocs", "deprecated"],
   argTypes: {
     size: {
       control: { type: "select" },
       options: ["small", "medium", "large"],
+    },
+    searchable: {
+      control: { type: "boolean" },
+    },
+    clearable: {
+      control: { type: "boolean" },
+    },
+    multi: {
+      control: { type: "boolean" },
     },
   },
 };
@@ -28,6 +37,7 @@ export const Default = {
     placeholder: "Select an option",
     options: defaultOptions,
     size: "medium",
+    onOptionSelect: (option) => console.log("Selected:", option),
   },
 };
 
@@ -36,6 +46,28 @@ export const Large = {
     placeholder: "Large dropdown",
     options: defaultOptions,
     size: "large",
+    onOptionSelect: (option) => console.log("Selected:", option),
+  },
+};
+
+export const Searchable = {
+  args: {
+    placeholder: "Search for an option",
+    options: defaultOptions,
+    size: "medium",
+    searchable: true,
+    onOptionSelect: (option) => console.log("Selected:", option),
+  },
+};
+
+export const MultiSelect = {
+  args: {
+    placeholder: "Select multiple options",
+    options: defaultOptions,
+    size: "medium",
+    multi: true,
+    clearable: true,
+    onOptionSelect: (option) => console.log("Selected:", option),
   },
 };
 
@@ -54,5 +86,6 @@ export const LongOptions = {
     ],
     size: "large",
     searchable: true,
+    onOptionSelect: (option) => console.log("Selected:", option),
   },
 };
