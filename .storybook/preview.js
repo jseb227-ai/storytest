@@ -1,4 +1,6 @@
 import "@vibe/core/tokens";
+// Load generated theme so Storybook (dev + build) uses the same CSS variables
+import "../theme.css";
 // import "vibe-storybook-components/index.css"; // Temporarily disabled due to Storybook 9 incompatibility
 
 // Initialize injected styles object for @vibe/core

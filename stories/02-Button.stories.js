@@ -1,4 +1,5 @@
 import { Button } from "@vibe/core";
+import { Search, Send, Download, Add, Close } from "@vibe/icons";
 
 export default {
   title: "Components/Button",
@@ -27,10 +28,10 @@ export default {
       control: "boolean",
     },
     leftIcon: {
-      control: "text",
+      control: false,
     },
     rightIcon: {
-      control: "text",
+      control: false,
     },
   },
 };
@@ -73,3 +74,20 @@ export const Tertiary = {
     },
   },
 };
+
+export const WithLeftIcon = {
+  args: {
+    children: "Search",
+    kind: "primary",
+    leftIcon: Search,
+  },
+};
+
+export const WithRightIcon = {
+  args: {
+    children: "Send",
+    kind: "primary",
+    rightIcon: Send,
+  },
+};
+

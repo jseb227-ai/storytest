@@ -9,6 +9,7 @@ const config = {
   "addons": [
     "@chromatic-com/storybook",
     "@storybook/addon-a11y",
+    "@storybook/addon-designs",
     {
       "name": "storybook-addon-tag-badges",
       "options": {

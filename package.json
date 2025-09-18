@@ -2,11 +2,13 @@
   "dependencies": {
     "@vibe/core": "^3.65.0",
     "@vibe/icons": "^1.11.0",
-    "@vibe/mcp": "^0.7.0"
+    "@vibe/mcp": "^0.7.0",
+    "dotenv": "^17.2.2"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.1",
     "@storybook/addon-a11y": "^9.1.6",
+    "@storybook/addon-designs": "^10.0.2",
     "@storybook/addon-docs": "^9.1.6",
     "@storybook/addon-links": "^9.1.6",
     "@storybook/addon-onboarding": "^9.1.6",
@@ -24,6 +26,10 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "chromatic --exit-zero-on-changes"
+    "chromatic": "chromatic --exit-zero-on-changes",
+    "design2code:fetch": "node scripts/fetch-design-tokens.js",
+    "design2code:generate": "node scripts/generate-style-updates.js",
+    "design2code:test": "DRY_RUN=true npm run design2code:fetch && npm run design2code:generate",
+    "design2code:full": "npm run design2code:fetch && npm run design2code:generate && npm run build-storybook"
   }
 }

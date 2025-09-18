@@ -4,7 +4,11 @@
       "Bash(rm:*)",
       "Bash(npm install:*)",
       "Bash(cat:*)",
-      "Bash(npm run chromatic:*)"
+      "Bash(npm run chromatic:*)",
+      "Bash(git push:*)",
+      "Bash(npm run storybook:*)",
+      "Bash(npm run design2code:test:*)",
+      "Bash(npm run design2code:full:*)"
     ],
     "deny": [],
     "ask": []
